@@ -81,7 +81,6 @@ $(document).keypress(function(){
 $(".btn").click(function(){
     var userChosenColour = $(this).attr("id");
     userClickedPattern.push(userChosenColour);
-    console.log(userClickedPattern);
     makeSound(userChosenColour);
     animatePress(userChosenColour);
     checkAnswer(userClickedPattern.length)
